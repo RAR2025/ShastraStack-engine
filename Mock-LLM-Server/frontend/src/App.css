@@ -1,0 +1,169 @@
+.page {
+  max-width: 720px;
+  margin: 32px auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #1a1a1a;
+}
+
+.page.wide {
+  max-width: 1060px;
+}
+
+.muted {
+  color: #5a5a5a;
+}
+
+.ok {
+  color: #0d5c2e;
+}
+
+.fail {
+  color: #8f1d1d;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 24px;
+}
+
+.tab {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 999px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #1a1a1a;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field > span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input, select, textarea, button {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+textarea {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  width: fit-content;
+}
+
+button.danger {
+  border: 1px solid #8f1d1d;
+  color: #8f1d1d;
+  background: #fff;
+}
+
+button.link {
+  border: none;
+  background: none;
+  padding: 0;
+  color: #0b4fd6;
+  font-size: 15px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.list li {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #fff;
+}
+
+.list li.active {
+  border-color: #1a1a1a;
+}
+
+.list.small li {
+  font-size: 13px;
+  padding: 8px 10px;
+}
+
+.actions {
+  display: inline-flex;
+  gap: 8px;
+  margin-left: 12px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.row input {
+  flex: 1;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.jsonblock h4 {
+  margin: 12px 0 6px;
+}
+
+pre {
+  background: #111;
+  color: #e8e8e8;
+  padding: 16px;
+  border-radius: 12px;
+  overflow: auto;
+  font-size: 13px;
+}
+
+pre.error {
+  background: #3d0f0f;
+  color: #ffd9d9;
+}
+
+code {
+  background: #f3f3f3;
+  padding: 1px 6px;
+  border-radius: 6px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 800px) {
+  .cols {
+    grid-template-columns: 1fr;
+  }
+}
