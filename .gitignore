@@ -11,3 +11,4 @@ Thumbs.db
 .idea/
 vite.config.*.timestamp*
 *.local
+package-lock.json
